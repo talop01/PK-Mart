@@ -1,0 +1,120 @@
+.home-right-column{
+    padding: 40px; 
+    background-color: #DAEBF2; 
+}
+
+.account-title{
+    border: 2px solid black;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #009efa;
+}
+
+.account-body{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 4px;
+    justify-content: space-between;
+    background-color: #0081cf;
+}
+
+.account-body h2 {
+    color: white;
+}
+
+h5 {
+    color: aliceblue;
+}
+
+h3 {
+    color: rgb(221, 255, 0);
+}
+
+/* form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+    border: 2px solid blanchedalmond;
+    border-radius: 4px;
+    justify-content: space-between;
+} */
+form label{
+    display: block;
+}
+
+form input{
+    width: 420px;
+    height: 25px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.body-left h2, .body-right h2{
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    width: 10rem;
+    padding: 0;
+    height: 40px;
+    background-color: #009efa;
+}
+
+/* form validation */
+/* form validation */
+.body-left small{
+    color: red;
+    display: block;
+}
+
+.cPassword small, .nPassword small, .confirmPassword small{
+    color: red;
+    display: block;
+}
+
+@media screen and (max-width:768px){
+    .body-left{
+        margin-bottom: 40px;
+    }
+    form{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:375px){
+    .home-right-column{
+    padding: 0;
+}
+
+.account-title{
+    border: 2px solid blanchedalmond;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form{
+    padding: 10px;
+}
+
+form input{
+    width: 200px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"]{
+    width: 8rem;
+}
+}

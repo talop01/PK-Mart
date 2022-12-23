@@ -1,0 +1,131 @@
+.home-right-column{
+    padding: 20px;
+    background-color: #DAEBF2;
+}
+
+/*Advance form */
+.advance-form{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    box-shadow: 4px 2px 3px #010911;
+    background-color: #009efa;
+}
+
+.advance-form input{
+    border: 2px solid #000000;
+}
+
+.advance-form textarea{
+    padding: 10px;
+    border: 2px solid #000000;
+}
+
+.advance-form>*{
+    padding: 20px;
+}
+
+.advance-form *{
+    font-size: 18px;
+}
+
+.left-form{
+    margin-bottom: 16px;
+}
+.left-form>*{
+    margin-top: 10px;
+}
+
+.left-form input{
+    width: 250px;
+    height: 30px;
+    border: 2px solid 000000;
+}
+
+/* right side of form */
+.terms p{
+    text-align-last: left;
+    font-size: 20px;
+}
+
+.terms>*{
+    margin-top: 5px;
+}
+.submitOption{
+    margin-top: 15px;
+}
+
+.terms>label{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.submitOption>input{
+    padding: 7px;
+    width: 100px;
+    background-color: #009efa;
+    color: white;
+    font-weight: bold;
+}
+
+/* finance status table */
+.finance-table {
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 4px 2px 3px #010911;
+    border: 2px solid #000000;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.finance-table * {
+    height: 50px;
+    background-color: #0081cf;
+}
+
+.table-head td {
+    border-bottom: 2px solid #000000;
+    color: white;
+    font-size: x-large;
+}
+
+.finance-table * {
+    border-bottom: 2px solid black;
+}
+
+.table-body th {
+    background-color: #0081cf;
+    color: white;
+}
+
+.table-body span {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    padding: 2px;
+    border: 2px solid #000000;
+}
+
+.td-design-paid {
+    background-color: #000000;
+}
+
+.td-design-pending {
+    background-color: rgb(93, 92, 92);
+}
+
+/* form validation */
+.left-form small{
+    color: red;
+}
+
+
+.middle-form small{
+    color: red;
+}
+
+.terms small{
+    color: red;
+}

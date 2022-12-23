@@ -1,0 +1,48 @@
+.home-right-column {
+    padding: 10px;
+}
+
+.rules-head {
+    text-align: center;
+    background-color: #009efa;
+    border-radius: 5px;
+    padding: 2%;
+    margin-bottom: 10px;
+    box-shadow: 4px 2px 3px #010911;
+    padding: 1%;
+    font-size: x-large;
+}
+
+.rules-templates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+}
+
+.rule-card {
+    font-size: x-large;
+    margin: 10px;
+    padding: 15px;
+    background-color: #308198;
+    width: 280px;
+    height: 230px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 4px 2px 3px #010911;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rule-card > h1 {
+    color: #00283b;
+    border-right: 5px solid #00283b;
+    padding: 10px;
+}
+
+.rule-card > p {
+    text-align: left;
+    padding: 10px;
+    color: white;
+}

@@ -1,0 +1,426 @@
+/* ------------------------------------- General Styling */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Oswald,'Times New Roman', Times, serif;
+}
+
+/* ------------------------------------- Home Wraper Styling */
+.home-container{
+    border-bottom: 10px solid #717375;
+}
+
+/* -------------------------------------- Navigation bar */
+.home-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #0081cf;
+    border-bottom: 3px solid black;
+}
+
+/* Brand Logo */
+img[src="image/logo23.jpeg"] {
+    height: 4rem;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* User  Avatar */
+img[src="image/avatar.png"] {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3em;
+    border: 2px solid whitesmoke;
+}
+
+/* navigation right side section */
+.home-avatar-Icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* navigation icon*/
+.home-avatar-Icon *{
+    color: whitesmoke;
+}
+
+.icons{
+    padding-right: 10px;
+    
+}
+
+.icons>a{
+    text-decoration: none;
+}
+
+.icons>a>span,.icons>span{
+    font-size: 32px;
+}
+
+/* Hidden menu icon */
+#menu-logo,#close-logo{
+    display: none;
+    font-size: 32px;
+}
+
+/* ---------------------------------------- Home body */
+.home-body{
+    display: grid;
+    grid-template-columns: 17% auto;    
+}
+
+/* ----------------------------------------- left column */
+.home-left-column{
+    grid-column: 1/2;
+    background-color: #DAEBF2;
+    border-right: 4px solid #717375;
+}
+
+.home-left-column>a>div{
+    display: flex;
+    margin: 1rem 0;
+    background-color: #0081cf;
+    padding: 10px 0;
+    transition: all 250ms;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.home-left-column>a>div:hover{
+    margin-left: 15px;
+    border-left: 10px solid black;
+    color: whitesmoke;
+}
+
+.home-left-column>a>div>span{
+    font-size: 32px;
+}
+
+.home-left-column>a>div>*{
+    padding: 5px;
+}
+
+.home-left-column>a>div>*{
+    padding-left: 1rem;
+} 
+.home-left-column>a{
+    text-decoration: none;
+    color: black;
+}
+
+/* adding and removing color*/
+.colorOn{
+    color: white;
+}
+
+/* -------------------------------------------------- Right Column*/
+.home-right-column{
+    grid-column: 2/3;
+    background-color: #DAEBF2;
+}
+
+.home-right-column{
+    padding: 40px;
+}
+
+h1{
+    text-align:center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.promotion,.resignation{
+    display: flex;
+    border: 2px solid black;
+    box-shadow: 4px 2px 3px #010911;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #009efa;
+}
+
+.promotion>div,.resignation>div{
+    padding: 25px;
+    margin: 25px;
+    background-color: #0081cf;
+
+}
+
+.left-side-form{
+    border: 2px solid black;
+    box-shadow: 4px 2px 3px #010911;
+    width: 50%;
+}
+
+.left-side-form>div{
+    align-items: center;
+}
+
+.left-side-form label{
+    display: block;
+}
+
+.left-side-form input, .left-side-form select{
+    width: 300px;
+    height: 30px;
+}
+
+.right-side-form{
+    border: 2px solid black;
+    box-shadow: 4px 2px 3px #010911;
+}
+.right-side-form label{
+    display: block;
+}
+
+.right-side-form input{
+    width: 100px;
+    height: 50px;
+    box-shadow: -3px -3px black;
+    background-color: #009efa;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* Resignation Application Form */
+.file{
+    margin-top: 10px;
+}
+
+/* table */
+.employee-table {
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 4px 2px 3px #010911;
+    border: 2px solid #010911;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.employee-table * {
+    height: 50px;
+    background-color: #0081cf;
+}
+
+.table-head td {
+    border-bottom: 2px solid black;
+    font-size: x-large;
+}
+
+.employee-table * {
+    border-bottom: 2px solid black;
+}
+
+.table-body th {
+    background-color: #0081cf;
+    color: white;
+}
+
+.table-body span {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    padding: 2px;
+    border: 2px solid black;
+}
+
+.td-design-paid {
+    background-color: #8b7f7f;
+}
+
+.td-design-pending {
+    background-color: rgb(93, 92, 92);
+}
+
+/* validation form */
+.left-side-form small{
+    color: red;
+}
+.right-side-form small{
+    color: red;
+}
+
+
+/* --------------------------------------------------- Responsive Section */
+/* @media screen and (max-width: 1440px) {
+    
+    .home-body{
+        grid-template-columns: 10% auto;
+    }
+    
+    .home-left-column{
+        grid-column: 1/2;
+    }
+
+    .home-left-column h2{
+        display: none;
+    }
+    .home-left-column>a>div>*{
+        padding: 0;
+        margin: 0;
+    }
+    .home-left-column>a>div{
+        padding-left:35%;
+    }
+    
+    .home-right-column{
+        padding-left: 10px;
+        grid-column: 2/3;
+    }
+} */
+
+/* Screen Size < 900px */
+@media screen and (max-width: 1400px) {
+    /* home-body */
+    .home-body{ 
+        grid-template-columns: 0px auto;
+    }
+
+    /* left column */
+    .home-left-column{
+       position: absolute;
+       top: 109px;
+    }
+
+    .home-left-column>a>div{
+        padding:20px;
+    }
+
+    /* Hiding the sideBar */
+    .hide-sidebar{
+        margin-left: -270px;
+    }
+
+    /* Displaying the menu bar */
+    #menu-logo{
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:1165px){
+    .home-right-column h1{
+        text-align:left;
+    }
+    .home-right-column{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .promotion{
+        flex-wrap: wrap;
+        padding: 10px;
+        width: 640px;
+        justify-content: center;
+    }
+    .left-side-form{
+        border: 2px solid black;
+        box-shadow: 5px 5px #888888;
+    }
+    
+    .left-side-form>div{
+        align-items: center;
+    }
+    
+    .left-side-form label{
+        display: block;
+    }
+    
+    .left-side-form input, .left-side-form select{
+        width: px;
+        height: 30px;
+    }
+    
+}
+/* Screen Size < 700px */
+/* here */
+@media screen and (max-width:765px){
+    /* Navigation bar icons; Hiding the nevigation icon */
+    .icons>a{
+        display: none;
+    }
+    /* left column */
+    .home-left-column>a>div{
+        margin: 0 5px;
+        padding: 5px 10px;
+    }
+    .home-left-column>a>div:hover{
+        margin-left: 2px;
+        margin-right: 2px;
+        border-left: 1px solid black;
+    }
+    .home-left-column h2{
+        display: block;
+    }   
+
+    /* Right-left-column */
+    .home-right-column{
+        padding: 10px;
+    }
+    
+    .promotion{
+        display: flex;
+        border: none;
+        box-shadow: none;
+        padding: 0px;
+    }
+    
+    .promotion>div{
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .left-side-form{
+        border: 2px solid black;
+        box-shadow: 5px 5px #888888;
+        width: auto;
+    }
+    
+    .left-side-form>div{
+        align-items: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .left-side-form label{
+        display: block;
+    }
+    
+    .left-side-form input, .left-side-form select{
+        width: 300px;
+        height: 30px;
+    }
+    
+    .right-side-form{
+        border: 2px solid black;
+        box-shadow: 5px 5px #888888;
+    }
+    .right-side-form label{
+        display: block;
+    }
+    
+    .right-side-form input{
+        width: 100px;
+        height: 50px;
+        box-shadow: -3px -3px #888888;
+    }
+}
+/* Screen Size < 500px */
+@media screen and (max-width:500px){
+    /* left column */
+    .home-left-column>a>div>span{
+        font-size: 24px;
+    }
+    .home-left-column>a>div>h2{
+        font-size: 1rem;
+    }
+    .home-left-column{
+        padding-bottom: 5px;
+        border-bottom: 4px solid #717375;
+    }
+}

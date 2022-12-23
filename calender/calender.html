@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pk Mart</title>
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="../home/base.css" />
+    <link rel="stylesheet" href="calender.css" />
+    <!-- Icon link-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- font link -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+
+    <!-- Icon link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Element Wrapper -->
+    <div class="home-container">
+      <!-- ******************************************** Navigation bar *************************-->
+      <div class="home-navigation">
+        <!-- Band logo -->
+        <div class="home-logo">
+          <a href="../home/home.html"><img src="image/logo23.jpeg" alt="logo" /></a>
+        </div>
+        <!-- navigation Icons and user avatar -->
+        <div class="home-avatar-Icon">
+          <!-- navigation Icon -->
+          <div class="icons">
+            <span class="material-symbols-rounded" id="menu-logo"> menu </span>
+            <a href="../index.html">
+              <span class="material-symbols-rounded"> logout </span>
+            </a>
+            <a href="../Profile/profile.html">
+              <span class="material-symbols-rounded" onclick="smooth()">
+                notifications
+              </span>
+            </a>
+            <a href="../home/home.html">
+              <span class="material-symbols-rounded"> home </span>
+            </a>
+          </div>
+          <!-- Avatar -->
+          <a href="../account/account.html"><img src="image/avatar.png" alt="avatar" /></a>
+        </div>
+      </div>
+      <!-- ******************************************** Content *********************************-->
+      <div class="home-body">
+        <!-- ****************************************** sideBar *********************************-->
+        <div class="home-left-column hide-sidebar">
+          <!-- home-->
+          <a href="../home/home.html">
+            <div class="home-sidebar" onclick="currentPage('home-sidebar')">
+              <span class="material-symbols-rounded"> home </span>
+              <h2>Home</h2>
+            </div>
+          </a>
+          <!-- profile-->
+          <a href="../Profile/profile.html">
+            <div
+              class="Profile-sidebar"
+              onclick="currentPage('Profile-sidebar')"
+            >
+              <span class="material-symbols-rounded"> Person </span>
+              <h2>Profile</h2>
+            </div>
+          </a>
+          <!-- Employee -->
+          <a href="../employee/employee.html">
+            <div
+              class="Employee-sidebar"
+              onclick="currentPage('Employee-sidebar')"
+            >
+              <span class="material-symbols-rounded"> badge </span>
+              <h2>Employee</h2>
+            </div>
+          </a>
+          <!-- Service -->
+          <a href="../Service/service.html">
+            <div
+              class="service-sidebar"
+              onclick="currentPage('service-sidebar')"
+            >
+              <span class="material-symbols-rounded">
+                home_repair_service
+              </span>
+              <h2>Service</h2>
+            </div>
+          </a>
+          <!-- Finance -->
+          <a href="../finance/finance.html">
+            <div
+              class="finance-sidebar"
+              onclick="currentPage('finance-sidebar')"
+            >
+              <span class="material-symbols-rounded"> monetization_on </span>
+              <h2>Finance</h2>
+            </div>
+          </a>
+          <!-- calender -->
+          <a href="calender.html">
+            <div
+              class="calender-sidebar colorOn"
+              onclick="currentPage('calender-sidebar')"
+            >
+              <span class="material-symbols-rounded"> calendar_month </span>
+              <h2>Calender</h2>
+            </div>
+          </a>
+          <!-- Publication -->
+          <a href="../publication/Publication.html">
+            <div
+              class="publication-sidebar"
+              onclick="currentPage('publication-sidebar')"
+            >
+              <span class="material-symbols-rounded">
+                download_for_offline
+              </span>
+              <h2>Publication</h2>
+            </div>
+          </a>
+          <!-- Inventory -->
+          <a href="../Inventory/Inventory.html">
+            <div
+              class="inventories-sidebar"
+              onclick="currentPage('inventories-sidebar')"
+            >
+              <span class="material-symbols-rounded"> inventory_2 </span>
+              <h2>Inventories</h2>
+            </div>
+          </a>
+          <!-- HumanResource -->
+          <a href="../Human Resources/Human Resources.html">
+            <div
+              class="humanResource-sidebar"
+              onclick="currentPage('humanResource-sidebar')"
+            >
+              <span class="material-symbols-rounded"> groups </span>
+              <h2>Human Resource</h2>
+            </div>
+          </a>
+          <!-- Rules -->
+          <a href="../Rules/Rules.html">
+            <div class="rules-sidebar" onclick="currentPage('rules-sidebar')">
+              <span class="material-symbols-rounded"> gavel </span>
+              <h2>Rules</h2>
+            </div>
+          </a>
+          <!-- Account -->
+          <a href="../account/account.html">
+            <div
+              class="account-sidebar"
+              onclick="currentPage('account-sidebar')"
+            >
+              <span class="material-symbols-rounded"> account_circle </span>
+              <h2>Account</h2>
+            </div>
+          </a>
+          <!-- LogOut -->
+          <a href="../index.html">
+            <div class="logOut-sidebar" onclick="currentPage('logOut-sidebar')">
+              <span class="material-symbols-rounded"> logout </span>
+              <h2>logOut</h2>
+            </div>
+          </a>
+        </div>
+        <div class="home-right-column">
+          <div class="calender">
+            <div class="calender-left">
+              <div class="weather">
+                <img src="image/sun2.png" alt="" />
+                <div class="weather-description">
+                  <h1>12 <sup>o</sup>C</h1>
+                  <p>Sunny</p>
+                </div>
+              </div>
+              <div class="event">
+                <h1>Event</h1>
+                <h5 style="margin-left: 10px;">Football Match</h5>
+                <h5 style="margin-left: 10px;">Dinner Date</h5>
+              </div>
+            </div>
+            <div class="calender-right">
+              <div class="calender-header">
+                <span class="material-symbols-rounded" id="left-arrow">
+                  arrow_back_ios_new
+                </span>
+                <h1 class="month"></h1>
+                <span class="material-symbols-rounded" id="right-arrow">
+                  arrow_forward_ios
+                </span>
+              </div>
+              <div class="calender-body">
+                <table>
+                  <thead>
+                    <tr>
+                      <td>MON</td>
+                      <td>TUE</td>
+                      <td>WED</td>
+                      <td>THUR</td>
+                      <td>FRI</td>
+                      <td>SAT</td>
+                      <td>SUN</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>30</td>
+                      <td>31</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>8</td>
+                      <td>9</td>
+                      <td>10</td>
+                      <td>11</td>
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <td>13</td>
+                      <td>14</td>
+                      <td>15</td>
+                      <td>16</td>
+                      <td>17</td>
+                      <td>18</td>
+                      <td>19</td>
+                    </tr>
+                    <tr>
+                      <td>20</td>
+                      <td>21</td>
+                      <td>22</td>
+                      <td>23</td>
+                      <td>24</td>
+                      <td><span>25</span></td>
+                      <td>26</td>
+                    </tr>
+                    <tr>
+                      <td>27</td>
+                      <td>28</td>
+                      <td>29</td>
+                      <td>30</td>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                      <td>8</td>
+                      <td>9</td>
+                      <td>10</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- js file link -->
+    <script src="../home/home.js"></script>
+    <script src="calender.js"></script>
+  </body>
+</html>

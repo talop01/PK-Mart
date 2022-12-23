@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory and Property</title>
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="../home/base.css"/>
+    <link rel="stylesheet" href="inventory.css">
+    <!-- Icon link-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- font link -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Element Wrapper -->
+    <div class="home-container">
+      <!-- ******************************************** Navigation bar *************************-->
+      <div class="home-navigation">
+        <!-- Band logo -->
+        <div class="home-logo">
+          <a href="../home/home.html"><img src="image/logo23.jpeg" alt="logo" /></a>
+        </div>
+        <!-- navigation Icons and user avatar -->
+        <div class="home-avatar-Icon">
+          <!-- navigation Icon -->
+          <div class="icons">
+            <span class="material-symbols-rounded" id="menu-logo"> menu </span>
+            <a href="../index.html">
+              <span class="material-symbols-rounded"> logout </span>
+            </a>
+            <a href="../Profile/profile.html">
+              <span class="material-symbols-rounded" onclick="smooth()">
+                notifications
+              </span>
+            </a>
+            <a href="../home/home.html">
+              <span class="material-symbols-rounded"> home </span>
+            </a>
+          </div>
+          <!-- Avatar -->
+          <a href="../account/account.html"><img src="image/avatar.png" alt="avatar" /></a>
+        </div>
+      </div>
+      <!-- ******************************************** Content *********************************-->
+      <div class="home-body">
+        <!-- ****************************************** sideBar *********************************-->
+        <div class="home-left-column hide-sidebar">
+          <!-- home-->
+          <a href="../home/home.html">
+            <div
+              class="home-sidebar"
+              onclick="currentPage('home-sidebar')"
+            >
+              <span class="material-symbols-rounded"> home </span>
+              <h2>Home</h2>
+            </div>
+          </a>
+          <!-- profile-->
+          <a href="../Profile/profile.html">
+            <div
+              class="Profile-sidebar"
+              onclick="currentPage('Profile-sidebar')"
+            >
+              <span class="material-symbols-rounded"> Person </span>
+              <h2>Profile</h2>
+            </div>
+          </a>
+          <!-- Employee -->
+          <a href="../employee/employee.html">
+            <div
+              class="Employee-sidebar"
+              onclick="currentPage('Employee-sidebar')"
+            >
+              <span class="material-symbols-rounded"> badge </span>
+              <h2>Employee</h2>
+            </div>
+          </a>
+          <!-- Service -->
+          <a href="../Service/service.html">
+            <div
+              class="service-sidebar"
+              onclick="currentPage('service-sidebar')"
+            >
+              <span class="material-symbols-rounded">
+                home_repair_service
+              </span>
+              <h2>Service</h2>
+            </div>
+          </a>
+          <!-- Finance -->
+          <a href="../finance/finance.html">
+            <div
+              class="finance-sidebar"
+              onclick="currentPage('finance-sidebar')"
+            >
+              <span class="material-symbols-rounded"> monetization_on </span>
+              <h2>Finance</h2>
+            </div>
+          </a>
+          <!-- calender -->
+          <a href="../calender/calender.html">
+            <div
+              class="calender-sidebar"
+              onclick="currentPage('calender-sidebar')"
+            >
+              <span class="material-symbols-rounded"> calendar_month </span>
+              <h2>Calender</h2>
+            </div>
+          </a>
+          <!-- Publication -->
+          <a href="../Publication/Publication.html">
+            <div
+              class="publication-sidebar"
+              onclick="currentPage('publication-sidebar')"
+            >
+              <span class="material-symbols-rounded">
+                download_for_offline
+              </span>
+              <h2>Publication</h2>
+            </div>
+          </a>
+          <!-- Inventory -->
+          <a href="../Inventory/Inventory.html">
+            <div
+              class="inventories-sidebar colorOn"
+              onclick="currentPage('inventories-sidebar')"
+            >
+              <span class="material-symbols-rounded"> inventory_2 </span>
+              <h2>Inventories</h2>
+            </div>
+          </a>
+          <!-- HumanResource -->
+          <a href="../Human Resources/Human Resources.html">
+            <div
+              class="humanResource-sidebar"
+              onclick="currentPage('humanResource-sidebar')"
+            >
+              <span class="material-symbols-rounded"> groups </span>
+              <h2>Human Resource</h2>
+            </div>
+          </a>
+          <!-- Rules -->
+          <a href="../Rules/Rules.html">
+            <div class="rules-sidebar" onclick="currentPage('rules-sidebar')">
+              <span class="material-symbols-rounded"> gavel </span>
+              <h2>Rules</h2>
+            </div>
+          </a>
+          <!-- Account -->
+          <a href="../account/account.html">
+            <div
+              class="account-sidebar"
+              onclick="currentPage('account-sidebar')"
+            >
+              <span class="material-symbols-rounded"> account_circle </span>
+              <h2>Account</h2>
+            </div>
+          </a>
+          <!-- LogOut -->
+          <a href="../index.html">
+            <div class="logOut-sidebar" onclick="currentPage('logOut-sidebar')">
+              <span class="material-symbols-rounded"> logout </span>
+              <h2>logOut</h2>
+            </div>
+          </a>
+        </div>
+        <!-- -------------------------------- -->
+        <div class="home-right-column">
+          <div class="inventory_title">
+            <h2>Inventory and Property</h2>
+          </div>
+          <table>
+            <colgroup>
+                <col class="inventorytable" span="7">
+            </colgroup>
+            <div class="inventory_table">
+                <thead>
+                    <tr>
+                      <th>SL No.</th>
+                      <th>Sector</th>
+                      <th>Description</th>
+                      <th>Date</th>
+                      <th class="clearcolumn">Price</th>
+                      <th  class="clearcolumn">Quantity</th>
+                      <th>Total Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Food</td>
+                      <td>Apple</td>
+                      <td>10/2/2022</td>
+                      <td class="clearcolumn">Nu.40/kg</td>
+                      <td class="clearcolumn">100 kg</td>
+                      <td>Nu. 4000</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Food</td>
+                      <td>Watermelon</td>
+                      <td>10/2/2022</td>
+                      <td class="clearcolumn">Nu.90/piece</td>
+                      <td class="clearcolumn">50 Pieces</td>
+                      <td>Nu. 4500</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Food</td>
+                      <td>Uncle chips</td>
+                      <td>12/4/2022</td>
+                      <td class="clearcolumn">Nu.1000/box</td>
+                      <td class="clearcolumn">5 boxes</td>
+                      <td>Nu. 4000</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Food</td>
+                      <td>Big Cola</td>
+                      <td>12/4/2022</td>
+                      <td class="clearcolumn">Nu.500/set</td>
+                      <td class="clearcolumn">20 sets</td>
+                      <td>Nu. 10000</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Food</td>
+                      <td>Freezer</td>
+                      <td>15/6/2022</td>
+                      <td class="clearcolumn">Nu.10000/item</td>
+                      <td class="clearcolumn">2 items</td>
+                      <td>Nu. 20000</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Clothes </td>
+                      <td>Jackets</td>
+                      <td>15/6/2022</td>
+                      <td class="clearcolumn">Nu.1200/item</td>
+                      <td class="clearcolumn">20 items</td>
+                      <td>Nu. 24000</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>Footwears</td>
+                      <td>Boots</td>
+                      <td>15/6/2022</td>
+                      <td class="clearcolumn">Nu.1500/boot</td>
+                      <td class="clearcolumn">20 boots</td>
+                      <td>Nu. 30000</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>Food</td>
+                      <td>SK Gold</td>
+                      <td>19/6/2022</td>
+                      <td class="clearcolumn">Nu.900/bag</td>
+                      <td class="clearcolumn">100 bags</td>
+                      <td>Nu. 90000</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>Food</td>
+                      <td>Dragon Fruit</td>
+                      <td>20/8/2022</td>
+                      <td class="clearcolumn">Nu. 120/piece</td>
+                      <td class="clearcolumn">50 pieces</td>
+                      <td>Nu. 6000</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>Clothes</td>
+                      <td>Shirt</td>
+                      <td>25/8/2022</td>
+                      <td class="clearcolumn">Nu. 250/piece</td>
+                      <td class="clearcolumn">150 pieces</td>
+                      <td>Nu. 37500</td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>Clothes</td>
+                      <td>Jeans</td>
+                      <td>30/9/2022</td>
+                      <td class="clearcolumn">Nu. 1200/piece</td>
+                      <td class="clearcolumn">70 pieces</td>
+                      <td>Nu. 84000</td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>Appliances</td>
+                      <td>Lamp</td>
+                      <td>30/9/2022</td>
+                      <td class="clearcolumn">Nu. 400/lamp</td>
+                      <td class="clearcolumn">10 lamps</td>
+                      <td>Nu. 4000</td>
+                    </tr>
+                    <tr>
+                      <td>13</td>
+                      <td>Appliances</td>
+                      <td>Torch</td>
+                      <td>30/9/2022</td>
+                      <td class="clearcolumn">Nu. 350/torch</td>
+                      <td class="clearcolumn">20 torches</td>
+                      <td>Nu. 7000</td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td>Appliances</td>
+                      <td>Rice cooker</td>
+                      <td>1/10/2022</td>
+                      <td class="clearcolumn">Nu.1200/item</td>
+                      <td class="clearcolumn">10 items</td>
+                      <td>Nu. 12000</td>
+                    </tr>
+                    <tr>
+                      <td>15</td>
+                      <td>Food</td>
+                      <td>Soju</td>
+                      <td>2/10/2022</td>
+                      <td class="clearcolumn">Nu.1300/set</td>
+                      <td class="clearcolumn">10 sets</td>
+                      <td>Nu. 13000</td>
+                    </tr>
+                    <tr>
+                      <td>16</td>
+                      <td>Food</td>
+                      <td>Becon</td>
+                      <td>2/10/2022</td>
+                      <td class="clearcolumn">Nu.250/packet</td>
+                      <td class="clearcolumn">150 packets</td>
+                      <td>Nu. 37500</td>
+                    </tr>
+                    <tr>
+                      <td>17</td>
+                      <td>Health and Beauty</td>
+                      <td>Dettol Soap</td>
+                      <td>2/10/2022</td>
+                      <td class="clearcolumn">Nu.120/box</td>
+                      <td class="clearcolumn">20 boxes</td>
+                      <td>Nu. 24oo</td>
+                    </tr>
+                    <tr>
+                      <td>18</td>
+                      <td>Health and Beauty</td>
+                      <td>Face Cream</td>
+                      <td>2/10/2022</td>
+                      <td class="clearcolumn">Nu. 520/set</td>
+                      <td class="clearcolumn">10 sets</td>
+                      <td>Nu. 5200</td>
+                    </tr>
+                    <tr>
+                      <td>19</td>
+                      <td>Food</td>
+                      <td>Onion</td>
+                      <td>15/10/2022</td>
+                      <td class="clearcolumn">Nu. 40/kg</td>
+                      <td class="clearcolumn">200 kg</td>
+                      <td>Nu. 8000</td>
+                    </tr>
+                    <tr>
+                      <td>20</td>
+                      <td>Food</td>
+                      <td>Milk</td>
+                      <td>20/10/2022</td>
+                      <td class="clearcolumn">Nu. 1200/box</td>
+                      <td class="clearcolumn">30 boxes</td>
+                      <td>Nu. 36000</td>
+                    </tr>
+                    <tr>
+                      <td>21</td>
+                      <td>Food</td>
+                      <td>Sugar</td>
+                      <td>20/10/2022</td>
+                      <td class="clearcolumn">Nu. 500/box</td>
+                      <td class="clearcolumn">20 boxes</td>
+                      <td>Nu. 10000</td>
+                    </tr>
+                </tbody>
+            </div>
+        </table>
+        </div>
+      </div>
+    </div>
+    <!-- js file link -->
+    <script src="../Home/home.js"></script>
+  </body>
+</html>

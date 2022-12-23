@@ -1,0 +1,114 @@
+.home-right-column{
+    padding: 20px;    
+}
+
+form{
+    border: 2px solid black;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0081cf;
+}
+
+form>h1{
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}   
+
+form small{
+    display: block;
+    color: white;
+}
+
+form input{
+    width: 500px;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    border: 3px solid black;
+}
+
+form textarea{
+    width: 500px;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+.file>input{
+    border: none;
+}
+
+form>input{
+    width: 550px;
+    background-color: #009efa;
+    box-shadow: 5px 5px black;
+}
+
+.to>label,.from>label{
+    display: block;
+    color: white;
+    font-size: 18px;
+}
+
+.leaveDuration{
+    display: flex;
+    gap: 30px;
+}
+
+.leaveDuration  input{
+    width: 212px;
+}
+
+.file{
+    margin-left: 350px;
+    margin-top: 30px;
+}
+
+/* Table */
+.leave-table {
+    margin: 20px 0;
+    width: 100%;
+    box-shadow: 5px 5px #888888;
+    border: 2px solid #888888;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: #009efa;
+}
+
+.leave-table * {
+    height: 50px;
+}
+
+.table-head td {
+    border-bottom: 2px solid #009efa;
+    color: white;
+    font-size: x-large;
+}
+
+.leave-table * {
+    border-bottom: 2px solid black;
+}
+
+.table-body th {
+    background-color: #009efa;
+    color: white;
+}
+
+.table-body span {
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    padding: 2px;
+    border: 2px solid #888888;
+}
+
+.td-design-paid {
+    background-color: #8b7f7f;
+}
+
+.td-design-pending {
+    background-color: rgb(93, 92, 92);
+}

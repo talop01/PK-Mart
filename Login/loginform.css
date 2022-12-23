@@ -1,0 +1,57 @@
+body{
+    background-color: #0081cf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Oswald,'Times New Roman', Times, serif;
+}
+
+form{
+    background: #308198;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    padding: 0px 20px;
+    margin: 20px;
+    border: 3px solid black;
+    box-shadow: 5px 5px  #010911;
+    border-radius: 10px;
+    height: auto;
+}
+
+form>h1{
+    font-size: 48px;
+}
+
+.email,.password{
+    font-size: 28px;
+}
+
+.email>input, .password>input{
+    height: 40px;
+    width: 500px;
+    padding: 0 10px;
+    border: 3px solid black;
+
+}   
+form>*>label, form>*>small{
+    display: block;
+    margin-top: 10px;
+}
+
+form>input{
+    width: 300px;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    border: 3px solid black;
+    background-color: #0081cf;
+    font-family: Oswald,'Times New Roman', Times, serif;
+}
+
+/* formValidation */
+form small{
+    color: red;
+    display: block;
+}

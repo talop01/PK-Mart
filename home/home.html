@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pk Mart</title>
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="home.css" />
+    <!-- Icon link-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- font link -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+    />
+
+    <!-- Icon link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Element Wrapper -->
+    <div class="home-container">
+      <!-- ******************************************** Navigation bar *************************-->
+      <div class="home-navigation">
+        <!-- Band logo -->
+        <div class="home-logo">
+          <a href="../home/home.html"><img src="image/logo23.jpeg" alt="logo" /></a>
+        </div>
+        <!-- navigation Icons and user avatar -->
+        <div class="home-avatar-Icon">
+          <!-- navigation Icon -->
+          <div class="icons">
+            <span class="material-symbols-rounded" id="menu-logo"> menu </span>
+            <a href="../index.html">
+              <span class="material-symbols-rounded"> logout </span>
+            </a>
+            <span class="material-symbols-rounded" onclick="smooth()">
+              notifications
+            </span>
+            <a href="../home/home.html">
+              <span class="material-symbols-rounded"> home </span>
+            </a>
+          </div>
+          <!-- Avatar -->
+          <a href="../account/account.html"><img src="image/avatar.png" alt="avatar" /></a>
+        </div>
+      </div>
+      <!-- ******************************************** Content *********************************-->
+      <div class="home-body">
+        <!-- ****************************************** sideBar *********************************-->
+        <div class="home-left-column hide-sidebar">
+          <!-- home-->
+          <a href="home.html">
+            <div
+              class="home-sidebar colorOn"
+              onclick="currentPage('home-sidebar')"
+            >
+              <span class="material-symbols-rounded"> home </span>
+              <h2>Home</h2>
+            </div>
+          </a>
+          <!-- profile-->
+          <a href="../Profile/profile.html">
+            <div
+              class="Profile-sidebar"
+              onclick="currentPage('Profile-sidebar')"
+            >
+              <span class="material-symbols-rounded"> Person </span>
+              <h2>Profile</h2>
+            </div>
+          </a>
+          <!-- Employee -->
+          <a href="../employee/employee.html">
+            <div
+              class="Employee-sidebar"
+              onclick="currentPage('Employee-sidebar')"
+            >
+              <span class="material-symbols-rounded"> badge </span>
+              <h2>Employee</h2>
+            </div>
+          </a>
+          <!-- Service -->
+          <a href="../Service/service.html">
+            <div
+              class="service-sidebar"
+              onclick="currentPage('service-sidebar')"
+            >
+              <span class="material-symbols-rounded">
+                home_repair_service
+              </span>
+              <h2>Service</h2>
+            </div>
+          </a>
+          <!-- Finance -->
+          <a href="../finance/finance.html">
+            <div
+              class="finance-sidebar"
+              onclick="currentPage('finance-sidebar')"
+            >
+              <span class="material-symbols-rounded"> monetization_on </span>
+              <h2>Finance</h2>
+            </div>
+          </a>
+          <!-- calender -->
+          <a href="../calender/calender.html">
+            <div
+              class="calender-sidebar"
+              onclick="currentPage('calender-sidebar')"
+            >
+              <span class="material-symbols-rounded"> calendar_month </span>
+              <h2>Calender</h2>
+            </div>
+          </a>
+          <!-- Publication -->
+          <a href="../Publication/Publication.html">
+            <div
+              class="publication-sidebar"
+              onclick="currentPage('publication-sidebar')"
+            >
+              <span class="material-symbols-rounded">
+                download_for_offline
+              </span>
+              <h2>Publication</h2>
+            </div>
+          </a>
+          <!-- Inventory -->
+          <a href="../Inventory/Inventory.html">
+            <div
+              class="inventories-sidebar"
+              onclick="currentPage('inventories-sidebar')"
+            >
+              <span class="material-symbols-rounded"> inventory_2 </span>
+              <h2>Inventories</h2>
+            </div>
+          </a>
+          <!-- HumanResource -->
+          <a href="../Human Resources/Human Resources.html">
+            <div
+              class="humanResource-sidebar"
+              onclick="currentPage('humanResource-sidebar')"
+            >
+              <span class="material-symbols-rounded"> groups </span>
+              <h2>Human Resource</h2>
+            </div>
+          </a>
+          <!-- Rules -->
+          <a href="../Rules/Rules.html">
+            <div class="rules-sidebar" onclick="currentPage('rules-sidebar')">
+              <span class="material-symbols-rounded"> gavel </span>
+              <h2>Rules</h2>
+            </div>
+          </a>
+          <!-- Account -->
+          <a href="../account/account.html">
+            <div
+              class="account-sidebar"
+              onclick="currentPage('account-sidebar')"
+            >
+              <span class="material-symbols-rounded"> account_circle </span>
+              <h2>Account</h2>
+            </div>
+          </a>
+          <!-- LogOut -->
+          <a href="../index.html">
+            <div class="logOut-sidebar" onclick="currentPage('logOut-sidebar')">
+              <span class="material-symbols-rounded"> logout </span>
+              <h2>logOut</h2>
+            </div>
+          </a>
+        </div>
+        <div class="home-right-column">
+          <div class="row1">
+            <div class="row1-card">
+              <div class="card-img">
+                <img src="image/userPhoto.webp" alt="User Photo" />
+              </div>
+              <div class="card-description">
+                <h2>EID : PK109</h2>
+                <h2>Name : Sonam Dorji</h2>
+                <h2>Position : Cashier</h2>
+                <h2>Address : Olakha, Thimphu</h2>
+                <h2>Contact : 77331828</h2>
+              </div>
+              <div class="card-icon">
+                <a href="https://www.whatsapp.com/" style="color: white;"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://www.instagram.com" style="color: white;"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="https://www.facebook.com" style="color: white;"><i class="bx bxl-facebook-circle"></i></a>
+              </div>
+            </div>
+
+            <div class="row1-features">
+              <a href="../Service/service.html">
+                <div class="row1-leave">
+                  <h1>Leave Manangement System</h1>
+                </div>
+              </a>
+              <a href="../Rules/Rules.html">
+                <div class="row1-rules">
+                  <h1>Rules and Regulation</h1>
+                </div>
+              </a>
+              <a href="../finance/finance.html">
+                <div class="row1-finance">
+                  <h1>Finance</h1>
+                </div>
+              </a>
+              <a href="../Service/service.html">
+                <div class="row1-feedback">
+                  <h1>Feedback</h1>
+                </div>
+              </a>
+            </div>
+          </div>
+          <hr />
+
+          <div class="row2">
+            <div class="row2-notification" id="notification">
+              <div class="notifiction-header">
+                <h1>Notification</h1>
+              </div>
+
+              <div class="notification-body">
+                <div class="chatDisplay">
+                  <img src="image/chatAvatar.webp" alt="avatar" />
+                  <div>
+                    <h3 style="color: white;">@SonamDendrup</h3>
+                    <p>Tomorrow we will report at 10pm</p>
+                  </div>
+                </div>
+                <div class="chatDisplay">
+                  <img src="image/chatAvatar.webp" alt="avatar" />
+                  <div>
+                    <h3 style="color: white;">@SonamPem</h3>
+                    <p>Goodnight everybody!</p>
+                  </div>
+                </div>
+                <div class="chatDisplay">
+                  <img src="image/chatAvatar.webp" alt="avatar" />
+                  <div>
+                    <h3 style="color: white;">@Dechen</h3>
+                    <p>Tomorrow we will have an important meeting.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <div class="row3">
+            <div class="montly-status">
+              <div class="montly-title"><h1>Montly Work Status</h1></div>
+
+              <div class="status">
+                <div class="month">
+                  <div class="date-title">June, 2022</div>
+                  <div class="month-content">
+                    <div class="work-time">
+                      <h3>Work</h3>
+                      <p>25 hours</p>
+                    </div>
+                    <div class="over-time">
+                      <h3>Over Time</h3>
+                      <p>10 hours</p>
+                    </div>
+                    <div class="leave">
+                      <h3>Leave</h3>
+                      <p>48 hours</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="month">
+                  <div class="date-title">July, 2022</div>
+                  <div class="month-content">
+                    <div class="work-time">
+                      <h3>Work</h3>
+                      <p>30 hours</p>
+                    </div>
+                    <div class="over-time">
+                      <h3>Over Time</h3>
+                      <p>2 hours</p>
+                    </div>
+                    <div class="leave">
+                      <h3>Leave</h3>
+                      <p>0 hours</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="month">
+                  <div class="date-title">August, 2022</div>
+                  <div class="month-content">
+                    <div class="work-time">
+                      <h3>Work</h3>
+                      <p>20 hours</p>
+                    </div>
+                    <div class="over-time">
+                      <h3>Over Time</h3>
+                      <p>5 hours</p>
+                    </div>
+                    <div class="leave">
+                      <h3>Leave</h3>
+                      <p>24 hours</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <div class="row4">
+            <table class="employee-table">
+              <thead class="table-head">
+                <tr>
+                  <td colspan="7">Employees</td>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <tr>
+                  <th class="remove-cell">ID</th>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>contact</th>
+                  <th class="remove-cell2">Status</th>
+                </tr>
+
+                <tr>
+                  <td class="remove-cell">PK101</td>
+                  <td>Kuenzang</td>
+                  <td>Driver</td>
+                  <td>77896754</td>
+                  <td class="remove-cell2">
+                    <span class="td-design-paid">Tour</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="remove-cell">PK102</td>
+                  <td>Sonam</td>
+                  <td>Cashier</td>
+                  <td>17678954</td>
+                  <td class="remove-cell2">
+                    <span class="td-design-paid">work</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="remove-cell">PK103</td>
+                  <td>Karma</td>
+                  <td>Accountant</td>
+                  <td>77890098</td>
+                  <td class="remove-cell2">
+                    <span class="td-design-paid">work</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="remove-cell">PK104</td>
+                  <td>Pema</td>
+                  <td>Driver</td>
+                  <td>17645344</td>
+                  <td class="remove-cell2">
+                    <span class="td-design-pending">leave</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="remove-cell">PK105</td>
+                  <td>Dawa</td>
+                  <td>Driver</td>
+                  <td>77889976</td>
+                  <td class="remove-cell2">
+                    <span class="td-design-paid">Tour</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- js file link -->
+    <script src="home.js"></script>
+  </body>
+</html>

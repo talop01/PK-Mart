@@ -1,0 +1,87 @@
+.home-right-column{
+    padding: 40px;
+    background-color: #DAEBF2;
+}
+
+.calender{
+    border: 2px solid black;
+    display: flex;
+    padding: 20px;
+    background-color: #009efa;
+    /* justify-content: space-between; */
+}
+
+.calender-left{
+    width: 30%;
+    padding: 50px 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather>*{
+    display: grid;
+    justify-content:center ;
+}
+
+.event{
+    padding: 10px;
+}
+.event>h1{
+    font-size: 48px;
+    text-align: center;
+}
+
+/* Right side of calender */
+.calender-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    width: 70%;
+   
+}
+.calender-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 32px; 
+}
+.calender-header>h1{
+    padding: 10px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calender-header>span{
+    font-size: 32px;
+    cursor: pointer;  
+}
+
+/* Table */
+.calender-body{
+    width: 100%;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+table>*{
+    width: 100%;  
+}
+ 
+td{
+    height: 50px;
+    width: 50px;
+}
+
+table td>span{
+    background-color: white;
+    border: 2px solid black;
+    padding: 4px 6px;
+    border-radius: 50%;
+}
