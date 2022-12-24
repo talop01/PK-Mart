@@ -18,7 +18,7 @@ const showError = (input,message) => {
     const error = formField.querySelector("small");
 
     error.innerText = message;
-    input.style.borderColor = "Red";
+    input.style.borderColor = "#FF5159";
 }
 
 const showSuccess = (input) => {

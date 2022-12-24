@@ -1,5 +1,5 @@
 body{
-    background-color: #0081cf;
+    background-color:#00B0CF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,32 +8,37 @@ body{
 }
 
 form{
-    background: #308198;
+    background: #00B0CF;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;    
-    padding: 0px 20px;
+    padding: 20px;
     margin: 20px;
-    border: 3px solid black;
-    box-shadow: 5px 5px  #010911;
-    border-radius: 10px;
-    height: auto;
+    border: 2px solid black;
+    box-shadow: 5px 5px 15px 5px #00D6CF,-5px -5px 15px 5px #00D6CF;
 }
 
 form>h1{
-    font-size: 48px;
+    font-size: 32px;
+    border-bottom: 2px solid #002954;
+    box-sizing: border-box;
+    width: 313px;
+    text-align: center;
+    color: #002954;
 }
 
 .email,.password{
-    font-size: 28px;
+    font-size: 24px;
+    color: #002954;
 }
 
 .email>input, .password>input{
     height: 40px;
-    width: 500px;
+    width: 300px;
     padding: 0 10px;
-    border: 3px solid black;
+    border: 2px solid black;
+    background-color: #9CAEBC;
 
 }   
 form>*>label, form>*>small{
@@ -42,16 +47,49 @@ form>*>label, form>*>small{
 }
 
 form>input{
-    width: 300px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 200px;
     padding: 5px 0;
     margin-bottom: 10px;
-    border: 3px solid black;
+    border: 2px solid #002954;
+    box-shadow: 5px 5px #002954;
     background-color: #0081cf;
     font-family: Oswald,'Times New Roman', Times, serif;
+    color: #002954;
+}
+
+form>input:hover{
+    color: white;
 }
 
 /* formValidation */
 form small{
-    color: red;
+    color:white;
     display: block;
+    margin-bottom: 10px;
+}
+
+/* Register button*/
+form>a{
+    padding: 5px 0;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+form>a>h1{
+    font-size: 24px;
+    color: black;
+    color: #002954;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid #002954;
+    margin-top: 10px;
+    background-color: #0081cf;
+    box-shadow: 5px 5px #002954;
+}
+
+form>a>h1:hover{
+    color: white;
 }
